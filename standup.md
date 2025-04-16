@@ -26,8 +26,6 @@ What did they speak about?
 Action items:
 - [ ] ...
 
----
-
 ## After the meeting
 
 Key issues for the team:
