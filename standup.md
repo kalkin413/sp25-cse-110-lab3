@@ -34,5 +34,5 @@ Key issues for the team:
 People that can help with my blockers:
 - ...
 
-People who's blockers I can help with:
+People whose blockers I can help with:
 - ...
