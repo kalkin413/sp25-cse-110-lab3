@@ -1,0 +1,79 @@
+/* set page background color */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(255, 253, 197);
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* header styles */
+
+header {
+    background-color: rgb(54, 0, 82);
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* make a nicer navigation bar! */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(148, 0, 148);
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    flex: 1;
+    float: left;
+    display: inline;
+    border-right: 1px solid #bbb;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:hover {
+    background-color: #3e003a;
+}
+
+/* make it so page contents arent stuck to the side */
+.container {
+    padding: 0 20px;
+}
+
+footer {
+    padding: 0 20px;
+}
+
+/* so nav bar doesnt collide with link content */
+#attendees {
+    scroll-margin-top: 80px;
+}
+
+#agenda {
+    scroll-margin-top: 80px;
+}
+
+#meeting-notes {
+    scroll-margin-top: 80px;
+}

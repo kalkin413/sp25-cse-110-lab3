@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="src/favicon.ico">
+    <link rel="stylesheet" href="style.css">
     <title>Tutor Meeting Minutes</title>
 </head>
 <body>
@@ -12,190 +13,193 @@
         <img src="src/wave.png" width="400" alt="a picture of a noisy signal">
         <h2>Check-ins/Planning</h2>
         <div>April 14, 2025</div>
-        <nav>
-            <ul>
-                <li><a href="#attendees">Attendees</a></li>
-                <li><a href="#agenda">Agenda</a></li>
-                <li><a href="#meeting-notes">Meeting Notes</a></li>
-            </ul>
-        </nav>
+        <br>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#attendees">Attendees</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#meeting-notes">Meeting Notes</a></li>
+        </ul>
+    </nav>
 
     <main>
-        <section>
-            <h3 id="attendees">Attendees</h3>
-            <ul>
-                <li>Albert Albertson</li>
-                <li>Betina Beckam</li>
-                <li>Charlie Chen</li>
-                <li>Dev Dharmraj</li>
-                <li>Kalkin Kalkin</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3 id="agenda">Agenda</h3>
-            <ol>
-                <li>Review grading policies for Quiz 1</li>
-                <li>Discuss offfice hour allocations</li>
-                <li>Discuss quiz proctoring availabilities</li>
-                <li>Responding to student feedback</li>
-            </ol>
-        </section>
-
-        <section>
-            <h3 id="meeting-notes">Meeting Notes</h3>
-            
-            <p>
-                We will be grading quizzes based on correctess. Since they are multiple choice,
-                there will <strong>NOT</strong> be opportunities for partial credit.
-            </p>
-
-            <p>
-                For office hour allocations, each tutor may freely pick any hour time slot
-                per week and put it on the calendar. There may <b>not</b> be overlaps, and they 
-                should be held at reasonable times and near deadlines. <i>If this is not followed,
-                this priveledge will be taken away.</i>
-            </p>
-
-            <p>
-                Albert is free to proctor all quizzes. Betina can proctor all but the 
-                one held on Week 8 due to a conference trips. Charlie and Dev have an overlapping 
-                class, so they will not be proctoring any quizzes. Kalkin is technically free but 
-                has a class really far away right before quizzes, so they will be unable to make it
-                to quizzes on time to proctor. We will follow the following allocations:
-            </p>
+        <div class="container">
+            <section>
+                <h3 id="attendees">Attendees</h3>
                 <ul>
-                    <li>Betina proctors quizzes 1-5</li>
-                    <li>Albert proctors quizzes 6-10</li>
-                    <li>Charlie, Dev, and Kalkin jointy proctor the final</li>
+                    <li>Albert Albertson</li>
+                    <li>Betina Beckam</li>
+                    <li>Charlie Chen</li>
+                    <li>Dev Dharmraj</li>
+                    <li>Kalkin Kalkin</li>
                 </ul>
-            <p>
-                <em>All tutors must show up for proctoring before the quizzes actually start.</em>
-            </p>
+            </section>
 
-            <p>
-                Students want to have more interactive features on our course practice
-                website. One way we can do this is by embedding video explanations.
-                For example, here is a sample video embedded onto this very site:
-            </p>
-            <video controls width="400" src="src/wave.webm"></video>
+            <section>
+                <h3 id="agenda">Agenda</h3>
+                <ol>
+                    <li>Review grading policies for Quiz 1</li>
+                    <li>Discuss offfice hour allocations</li>
+                    <li>Discuss quiz proctoring availabilities</li>
+                    <li>Responding to student feedback</li>
+                </ol>
+            </section>
 
-            <p>
-                Another way we can increase interactivity is by including audio for signal processing
-                demonstrations, giving students a real example of what a song would sound like if we put 
-                it through a high pass filter. For example, here is some audio embedded onto this 
-                very site:
-            </p>
-            <audio controls src="src/audio.mp3"></audio>
+            <section>
+                <h3 id="meeting-notes">Meeting Notes</h3>
                 
-            <p>
-                Another way to do this is show questions and hide the answer
-                until the student chooses to view it, as demonstrated below:
-            </p>
-            <div>
-                <hr>
-                <details>
-                    <summary>
-                        What do we name the output of an LTI system when the given input is a Dirac delta function?
-                    </summary>
-                    <br>
-                    <span>Answer: The impulse response</span>
-                </details>
-                <hr>
-            </div>
-        </section>
+                <p>
+                    We will be grading quizzes based on correctess. Since they are multiple choice,
+                    there will <strong>NOT</strong> be opportunities for partial credit.
+                </p>
 
-        <p>
-            We should probably also put up the following academic integrity 
-            form on our course website:
-        </p>
+                <p>
+                    For office hour allocations, each tutor may freely pick any hour time slot
+                    per week and put it on the calendar. There may <b>not</b> be overlaps, and they 
+                    should be held at reasonable times and near deadlines. <i>If this is not followed,
+                    this priveledge will be taken away.</i>
+                </p>
 
-        <!-- FORM CODE -->
-        <div>
-            <form method="get">
-                <fieldset>
-                    <div>
-                        <label>Write your name:</label>
-                        <input type="text" list="name" name="name" required>
-                        <datalist id="name">
-                            <option value="Larry"></option>
-                            <option value="Monica"></option>
-                            <option value="Nethra"></option>
-                            <option value="Odysseus"></option>
-                            <option value="Pierre"></option>
-                        </datalist>
-                    </div>
-                    <br>
-                    <div>
-                        <label>Write your PID:</label>
-                        <input type="text" name="pid" required>
-                    </div>
+                <p>
+                    Albert is free to proctor all quizzes. Betina can proctor all but the 
+                    one held on Week 8 due to a conference trips. Charlie and Dev have an overlapping 
+                    class, so they will not be proctoring any quizzes. Kalkin is technically free but 
+                    has a class really far away right before quizzes, so they will be unable to make it
+                    to quizzes on time to proctor. We will follow the following allocations:
+                </p>
+                    <ul>
+                        <li>Betina proctors quizzes 1-5</li>
+                        <li>Albert proctors quizzes 6-10</li>
+                        <li>Charlie, Dev, and Kalkin jointy proctor the final</li>
+                    </ul>
+                <p>
+                    <em>All tutors must show up for proctoring before the quizzes actually start.</em>
+                </p>
 
-                    <br>
+                <p>
+                    Students want to have more interactive features on our course practice
+                    website. One way we can do this is by embedding video explanations.
+                    For example, here is a sample video embedded onto this very site:
+                </p>
+                <video controls width="400" src="src/wave.webm"></video>
 
-                    <div>
-                        <input type="radio" name="ai" value="true">
-                        <label>I agree to uphold academic integrity.</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="ai" value="false">
-                        <label>I do not agree to uphold academic integrity.</label>
-                    </div>
-
-                    <p>I understand the following policies:</p>
-                    <div>
-                        <input type="checkbox">
-                        <label>The use of Generative AI tools is strictly prohibited for homework.</label>
-                    </div>
-                    <div>
-                        <input type="checkbox">
-                        <label>Copying anyone else's work is strictly prohibited for homework and exams.</label>
-                    </div>
-                    <div>
-                        <input type="checkbox">
-                        <label>
-                            Violating any of these policies will result in failing the course and 
-                            getting reported to administration.
-                        </label>
-                    </div>
-
-                    <br>
-
-                    <div>
-                        <label>Please list any accomodations you require for this course or any concerns you have:</label>
-                        <br>
-                        <textarea rows="5" cols="60">Elaborate here ... </textarea>
-                    </div>
-
-                    <br>
-
-                    <div>
-                        <label>I confirm that I am not a robot:</label>
-                        <select>
-                            <option>-- Select --</option>
-                            <option>I am not a robot.</option>
-                            <option>I am a robot.</option>
-                        </select>
-                    </div>
-
-                    <br>
+                <p>
+                    Another way we can increase interactivity is by including audio for signal processing
+                    demonstrations, giving students a real example of what a song would sound like if we put 
+                    it through a high pass filter. For example, here is some audio embedded onto this 
+                    very site:
+                </p>
+                <audio controls src="src/audio.mp3"></audio>
                     
-                    <div>
-                        <label>Initials:</label>
-                        <input type="text">
+                <p>
+                    Another way to do this is show questions and hide the answer
+                    until the student chooses to view it, as demonstrated below:
+                </p>
+                <div>
+                    <hr>
+                    <details>
+                        <summary>
+                            What do we name the output of an LTI system when the given input is a Dirac delta function?
+                        </summary>
                         <br>
-                        <label>Date:</label>
-                        <input type="date">
-                    </div>
+                        <span>Answer: The impulse response</span>
+                    </details>
+                    <hr>
+                </div>
+            </section>
 
-                    <br>
+            <p>
+                We should probably also put up the following academic integrity 
+                form on our course website:
+            </p>
 
-                    <button> Submit </button>
+            <!-- FORM CODE -->
+            <div>
+                <form method="get">
+                    <fieldset>
+                        <div>
+                            <label>Write your name:</label>
+                            <input type="text" list="name" name="name" required>
+                            <datalist id="name">
+                                <option value="Larry"></option>
+                                <option value="Monica"></option>
+                                <option value="Nethra"></option>
+                                <option value="Odysseus"></option>
+                                <option value="Pierre"></option>
+                            </datalist>
+                        </div>
+                        <br>
+                        <div>
+                            <label>Write your PID:</label>
+                            <input type="text" name="pid" required>
+                        </div>
 
-                </fieldset>
-            </form>
+                        <br>
+
+                        <div>
+                            <input type="radio" name="ai" value="true">
+                            <label>I agree to uphold academic integrity.</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="ai" value="false">
+                            <label>I do not agree to uphold academic integrity.</label>
+                        </div>
+
+                        <p>I understand the following policies:</p>
+                        <div>
+                            <input type="checkbox">
+                            <label>The use of Generative AI tools is strictly prohibited for homework.</label>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <label>Copying anyone else's work is strictly prohibited for homework and exams.</label>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <label>
+                                Violating any of these policies will result in failing the course and 
+                                getting reported to administration.
+                            </label>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label>Please list any accomodations you require for this course or any concerns you have:</label>
+                            <br>
+                            <textarea rows="5" cols="60">Elaborate here ... </textarea>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label>I confirm that I am not a robot:</label>
+                            <select>
+                                <option>-- Select --</option>
+                                <option>I am not a robot.</option>
+                                <option>I am a robot.</option>
+                            </select>
+                        </div>
+
+                        <br>
+                        
+                        <div>
+                            <label>Initials:</label>
+                            <input type="text">
+                            <br>
+                            <label>Date:</label>
+                            <input type="date">
+                        </div>
+
+                        <br>
+
+                        <button> Submit </button>
+
+                    </fieldset>
+                </form>
+            </div>
         </div>
     </main>
 

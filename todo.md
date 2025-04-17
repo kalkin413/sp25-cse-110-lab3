@@ -1,0 +1,60 @@
+checklist of elements to use
+
+- [ ] Comments
+- Color
+    - [x] rgb
+    - [x] hexcodes
+    - [ ] hsl/hsla
+    - [x] color name
+    - wider gamut color
+        - [ ] color(colorspace)
+        - [ ] color-mix
+- [ ] Variables
+- [ ] Fallback
+- [ ] variable that also has a fallback
+- [ ] background styles
+    - [x] background-color
+- unit
+    - [ ] use 3 unique relative units total
+    - [ ] use 3 unique absolute units total
+- box model
+    - margin
+        - [ ] long
+        - [x] short
+        - [ ] auto
+    - padding
+        - [x] long
+        - [x] short
+    - borders
+        - [ ] border-style
+        - [ ] border-color
+        - [ ] border-width
+        - [ ] border-radius
+- text
+    - [x] color
+    - [ ] text-decoration
+    - [x] text-align
+- display
+    - [x] at least two of none, block, inline-block, inline
+    - apply these values to the display property
+- sizing
+    - [ ] height
+    - [ ] width
+    - [ ] max-width
+    - [ ] min-width
+- position
+    - [ ] at least two of static, relative, fixed, absolute, sticky
+    - apply these values to the position property
+- pseudo-class
+    - [x] hover
+    - [ ] active
+- layouts
+    - [ ] flexbox
+    - [ ] grid
+- responsiveness
+    - [ ] at least one query based on the screen width
+        - media query
+    - [ ] check devtools! make sure site works and looks fine on three main types of form factors
+    - [ ] layout of page should automatically reflow when size changes
+- fonts
+    - [ ] include and use a 3rd party font
