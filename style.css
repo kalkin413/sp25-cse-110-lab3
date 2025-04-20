@@ -28,7 +28,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(148, 0, 148);
+    background-color: hsl(300, 100%, 29%);
     display: flex;
     justify-content: space-between;
 }
@@ -47,7 +47,7 @@ nav li:last-child {
 nav li a {
     display: block;
     text-align: center;
-    padding: 14px;
+    padding: 11pt;
     text-decoration: none;
     color: white;
 }
@@ -58,11 +58,11 @@ nav li a:hover {
 
 /* make it so page contents arent stuck to the side */
 .container {
-    padding: 0 20px;
+    padding: 0 1.25pc;
 }
 
 footer {
-    padding: 0 20px;
+    padding: 1vh 20px;
 }
 
 /* so nav bar doesnt collide with link content */
@@ -76,4 +76,40 @@ footer {
 
 #meeting-notes {
     scroll-margin-top: 80px;
+}
+
+/* form stuff */
+.form-code {
+    max-width: 95vw;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    background:
+        linear-gradient(
+        130deg,
+        rgb(255 255 255 / 25%) 39%,
+        rgb(51 56 57 / 40%) 96%
+      );
+}
+
+/* mobile/thin browswers only */
+@media (max-width: 560px)
+{
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+textarea {
+    resize: vertical;
 }

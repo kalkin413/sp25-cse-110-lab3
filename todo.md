@@ -1,10 +1,10 @@
 checklist of elements to use
 
-- [ ] Comments
+- [x] Comments
 - Color
     - [x] rgb
     - [x] hexcodes
-    - [ ] hsl/hsla
+    - [x] hsl/hsla
     - [x] color name
     - wider gamut color
         - [ ] color(colorspace)
@@ -12,11 +12,11 @@ checklist of elements to use
 - [ ] Variables
 - [ ] Fallback
 - [ ] variable that also has a fallback
-- [ ] background styles
+- [x] background styles
     - [x] background-color
 - unit
-    - [ ] use 3 unique relative units total
-    - [ ] use 3 unique absolute units total
+    - [x] use 3 unique relative units total
+    - [x] use 3 unique absolute units total
 - box model
     - margin
         - [ ] long
@@ -39,9 +39,9 @@ checklist of elements to use
     - apply these values to the display property
 - sizing
     - [ ] height
-    - [ ] width
-    - [ ] max-width
-    - [ ] min-width
+    - [x] width
+    - [x] max-width
+    - [x] min-width
 - position
     - [ ] at least two of static, relative, fixed, absolute, sticky
     - apply these values to the position property
@@ -49,12 +49,12 @@ checklist of elements to use
     - [x] hover
     - [ ] active
 - layouts
-    - [ ] flexbox
+    - [x] flexbox
     - [ ] grid
 - responsiveness
-    - [ ] at least one query based on the screen width
+    - [x] at least one query based on the screen width
         - media query
-    - [ ] check devtools! make sure site works and looks fine on three main types of form factors
-    - [ ] layout of page should automatically reflow when size changes
+    - [x] check devtools! make sure site works and looks fine on three main types of form factors
+    - [x] layout of page should automatically reflow when size changes
 - fonts
     - [ ] include and use a 3rd party font

@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        audio {
+            max-width: 75%;
+        }
+
+        video {
+            max-width: 90%;
+            min-width: 30%;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="src/favicon.ico">
@@ -10,9 +20,9 @@
 <body>
     <header>
         <h1>ECE 45 Tutor Meeting</h1>
-        <img src="src/wave.png" width="400" alt="a picture of a noisy signal">
+        <img style="max-width: 75%;" src="src/wave.png" width="400" alt="a picture of a noisy signal">
         <h2>Check-ins/Planning</h2>
-        <div>April 14, 2025</div>
+        <p>April 14, 2025</p>
         <br>
     </header>
 
@@ -97,17 +107,14 @@
                     Another way to do this is show questions and hide the answer
                     until the student chooses to view it, as demonstrated below:
                 </p>
-                <div>
-                    <hr>
-                    <details>
-                        <summary>
-                            What do we name the output of an LTI system when the given input is a Dirac delta function?
-                        </summary>
-                        <br>
-                        <span>Answer: The impulse response</span>
-                    </details>
-                    <hr>
-                </div>
+                <hr>
+                <details>
+                    <summary>
+                        What do we name the output of an LTI system when the given input is a Dirac delta function?
+                    </summary>
+                    <p>Answer: The impulse response</p>
+                </details>
+                <hr>
             </section>
 
             <p>
@@ -116,82 +123,65 @@
             </p>
 
             <!-- FORM CODE -->
-            <div>
+            <div class="form-code">
                 <form method="get">
                     <fieldset>
-                        <div>
-                            <label>Write your name:</label>
-                            <input type="text" list="name" name="name" required>
-                            <datalist id="name">
-                                <option value="Larry"></option>
-                                <option value="Monica"></option>
-                                <option value="Nethra"></option>
-                                <option value="Odysseus"></option>
-                                <option value="Pierre"></option>
-                            </datalist>
-                        </div>
-                        <br>
-                        <div>
-                            <label>Write your PID:</label>
-                            <input type="text" name="pid" required>
-                        </div>
+                        <label>Write your name:</label>
+                        <input type="text" list="name" name="name" required>
+                        <datalist id="name">
+                            <option value="Larry"></option>
+                            <option value="Monica"></option>
+                            <option value="Nethra"></option>
+                            <option value="Odysseus"></option>
+                            <option value="Pierre"></option>
+                        </datalist>
 
                         <br>
 
-                        <div>
-                            <input type="radio" name="ai" value="true">
-                            <label>I agree to uphold academic integrity.</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="ai" value="false">
-                            <label>I do not agree to uphold academic integrity.</label>
-                        </div>
+                        <label>Write your PID:</label>
+                        <input type="text" name="pid" required>
+
+                        <br>
+
+                        <input type="radio" name="ai" value="true">
+                        <label>I agree to uphold academic integrity.</label>
+                        <br>
+                        <input type="radio" name="ai" value="false">
+                        <label>I do not agree to uphold academic integrity.</label>
 
                         <p>I understand the following policies:</p>
-                        <div>
-                            <input type="checkbox">
-                            <label>The use of Generative AI tools is strictly prohibited for homework.</label>
-                        </div>
-                        <div>
-                            <input type="checkbox">
-                            <label>Copying anyone else's work is strictly prohibited for homework and exams.</label>
-                        </div>
-                        <div>
-                            <input type="checkbox">
-                            <label>
-                                Violating any of these policies will result in failing the course and 
-                                getting reported to administration.
-                            </label>
-                        </div>
+                        <input type="checkbox">
+                        <label>The use of Generative AI tools is strictly prohibited for homework.</label>
+                        <br><input type="checkbox">
+                        <label>Copying anyone else's work is strictly prohibited for homework and exams.</label>
+                        <br><input type="checkbox">
+                        <label>
+                            Violating any of these policies will result in failing the course and 
+                            getting reported to administration.
+                        </label>
 
+                        <br><br>
+
+                        <label>Please list any accomodations you require for this course or any concerns you have:</label>
                         <br>
+                        <textarea rows="5" cols="60">Elaborate here ... </textarea>
 
-                        <div>
-                            <label>Please list any accomodations you require for this course or any concerns you have:</label>
-                            <br>
-                            <textarea rows="5" cols="60">Elaborate here ... </textarea>
-                        </div>
+                        <br><br>
 
-                        <br>
-
-                        <div>
-                            <label>I confirm that I am not a robot:</label>
-                            <select>
-                                <option>-- Select --</option>
-                                <option>I am not a robot.</option>
-                                <option>I am a robot.</option>
-                            </select>
-                        </div>
+                        <label>I confirm that I am not a robot:</label>
+                        <select>
+                            <option>-- Select --</option>
+                            <option>I am not a robot.</option>
+                            <option>I am a robot.</option>
+                        </select>
 
                         <br>
                         
-                        <div>
-                            <label>Initials:</label>
-                            <input type="text">
-                            <br>
-                            <label>Date:</label>
-                            <input type="date">
-                        </div>
+                        <label>Initials:</label>
+                        <input type="text">
+                        <br>
+                        <label>Date:</label>
+                        <input type="date">
 
                         <br>
 
@@ -204,12 +194,10 @@
     </main>
 
     <footer>
-        <div>
             <p>
                 Next meeting: April 21, 2025 at 3:00 PM.<br>
                 Notes taken by Kalkin Kalkin
             </p>
-        </div>
     </footer>
 
 </body>
