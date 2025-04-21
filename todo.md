@@ -7,11 +7,10 @@ checklist of elements to use
     - [x] hsl/hsla
     - [x] color name
     - wider gamut color
-        - [ ] color(colorspace)
-        - [ ] color-mix
-- [ ] Variables
-- [ ] Fallback
-- [ ] variable that also has a fallback
+        - [x] color(colorspace)
+        - [x] color-mix
+- [x] Variables
+- [x] Fallback
 - [x] background styles
     - [x] background-color
 - unit
@@ -19,42 +18,42 @@ checklist of elements to use
     - [x] use 3 unique absolute units total
 - box model
     - margin
-        - [ ] long
+        - [x] long
         - [x] short
-        - [ ] auto
+        - [x] auto
     - padding
         - [x] long
         - [x] short
     - borders
-        - [ ] border-style
-        - [ ] border-color
-        - [ ] border-width
-        - [ ] border-radius
+        - [x] border-style
+        - [x] border-color
+        - [x] border-width
+        - [x] border-radius
 - text
     - [x] color
-    - [ ] text-decoration
+    - [x] text-decoration
     - [x] text-align
 - display
     - [x] at least two of none, block, inline-block, inline
     - apply these values to the display property
 - sizing
-    - [ ] height
+    - [x] height
     - [x] width
     - [x] max-width
     - [x] min-width
 - position
-    - [ ] at least two of static, relative, fixed, absolute, sticky
+    - [x] at least two of static, relative, fixed, absolute, sticky
     - apply these values to the position property
 - pseudo-class
     - [x] hover
-    - [ ] active
+    - [x] active
 - layouts
     - [x] flexbox
-    - [ ] grid
+    - [x] grid
 - responsiveness
     - [x] at least one query based on the screen width
         - media query
     - [x] check devtools! make sure site works and looks fine on three main types of form factors
     - [x] layout of page should automatically reflow when size changes
 - fonts
-    - [ ] include and use a 3rd party font
+    - [x] include and use a 3rd party font

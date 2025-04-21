@@ -4,11 +4,15 @@
     <style>
         audio {
             max-width: 75%;
+            display: block;
+            margin:auto;
         }
 
         video {
             max-width: 90%;
             min-width: 30%;
+            display: block;
+            margin:auto;
         }
     </style>
     <meta charset="UTF-8">
@@ -107,14 +111,16 @@
                     Another way to do this is show questions and hide the answer
                     until the student chooses to view it, as demonstrated below:
                 </p>
-                <hr>
-                <details>
-                    <summary>
-                        What do we name the output of an LTI system when the given input is a Dirac delta function?
-                    </summary>
-                    <p>Answer: The impulse response</p>
-                </details>
-                <hr>
+                <div class="dropdown">
+                    <hr id="first">
+                    <details>
+                        <summary>
+                            What do we name the output of an LTI system when the given input is a Dirac delta function?
+                        </summary>
+                        <p>Answer: The impulse response</p>
+                    </details>
+                    <hr id="second">
+                </div>
             </section>
 
             <p>
